@@ -1,4 +1,4 @@
-package mytechnic.starcoco;
+package mytechnic.star.coco;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

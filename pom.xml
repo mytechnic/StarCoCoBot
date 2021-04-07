@@ -8,8 +8,8 @@
         <version>2.4.4</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>mytechnic</groupId>
-    <artifactId>StarCoCoBot</artifactId>
+    <groupId>mytechnic.star</groupId>
+    <artifactId>coco-bot</artifactId>
     <version>0.0.1</version>
     <name>StarCoCoBot</name>
     <description>스타의 코인 트레이딩 봇</description>
@@ -80,6 +80,13 @@
             <groupId>io.projectreactor</groupId>
             <artifactId>reactor-test</artifactId>
             <scope>test</scope>
+        </dependency>
+
+        <!-- swagger -->
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-boot-starter</artifactId>
+            <version>3.0.0</version>
         </dependency>
     </dependencies>
 
