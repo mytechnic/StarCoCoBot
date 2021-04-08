@@ -6,6 +6,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
+import mytechnic.star.coco.data.code.Gender;
 
 @ApiModel
 @NoArgsConstructor
@@ -22,4 +23,7 @@ public class UserCreateRequest {
 
     @ApiModelProperty(value = "이름", example = "홍길동", position = 3)
     private String name;
+
+    @ApiModelProperty(value = "성별", example = "MALE", position = 4)
+    private Gender gender;
 }

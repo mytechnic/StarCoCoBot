@@ -6,6 +6,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
+import mytechnic.star.coco.data.code.Gender;
 
 @ApiModel
 @NoArgsConstructor
@@ -26,6 +27,9 @@ public class UserInfoResponse {
     @ApiModelProperty(value = "이름", example = "홍길동", position = 4)
     private String name;
 
-    @ApiModelProperty(value = "삭제 구분", example = "false", position = 5)
+    @ApiModelProperty(value = "성별", example = "MALE", position = 5)
+    private Gender gender;
+
+    @ApiModelProperty(value = "삭제 구분", example = "false", position = 6)
     private Boolean isDeleted;
 }

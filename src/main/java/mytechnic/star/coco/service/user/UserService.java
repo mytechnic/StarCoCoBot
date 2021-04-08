@@ -1,9 +1,9 @@
 package mytechnic.star.coco.service.user;
 
 import lombok.RequiredArgsConstructor;
+import mytechnic.star.coco.common.domain.BusinessErrorException;
 import mytechnic.star.coco.data.jdbc.UserRepository;
 import mytechnic.star.coco.data.jdbc.entity.UserEntity;
-import mytechnic.star.coco.common.domain.BusinessErrorException;
 import mytechnic.star.coco.service.user.domain.UserCreateRequest;
 import mytechnic.star.coco.service.user.domain.UserCreateResponse;
 import mytechnic.star.coco.service.user.domain.UserInfoResponse;
@@ -28,6 +28,7 @@ public class UserService {
         user.setLoginId(request.getLoginId());
         user.setPassword(request.getPassword());
         user.setName(request.getName());
+        user.setGender(request.getGender());
         user.setIsDeleted(false);
         user.setUpdatedDate(new Date());
         user.setCreatedDate(new Date());
@@ -42,8 +43,9 @@ public class UserService {
         UserInfoResponse response = new UserInfoResponse();
         response.setUserNo(user.getUserNo());
         response.setLoginId(user.getLoginId());
-        response.setName(user.getName());
         response.setPassword(user.getPassword());
+        response.setName(user.getName());
+        user.setGender(user.getGender());
         response.setIsDeleted(user.getIsDeleted());
         return response;
     }
@@ -62,6 +64,7 @@ public class UserService {
         user.setLoginId(request.getLoginId());
         user.setPassword(request.getPassword());
         user.setName(request.getName());
+        user.setGender(request.getGender());
         user.setUpdatedDate(new Date());
         userRepository.save(user);
     }

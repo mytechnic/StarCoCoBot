@@ -4,7 +4,8 @@ create table user (
     login_id varchar(255) not null,
     password varchar(255) not null,
     name varchar(255) not null,
-    is_deleted smallint not null default 0,
+    gender varchar(20) not null,
+    is_deleted smallint not null,
     updated_date timestamp,
     created_date timestamp,
     primary key (user_no)

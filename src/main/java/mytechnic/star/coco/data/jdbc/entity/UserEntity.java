@@ -4,6 +4,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
+import mytechnic.star.coco.data.code.Gender;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.relational.core.mapping.Table;
 
@@ -21,6 +22,7 @@ public class UserEntity {
     private String loginId;
     private String name;
     private String password;
+    private Gender gender;
     private Boolean isDeleted;
     private Date updatedDate;
     private Date createdDate;

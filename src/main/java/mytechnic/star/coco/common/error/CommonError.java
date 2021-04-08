@@ -8,7 +8,8 @@ import org.springframework.http.HttpStatus;
 @AllArgsConstructor
 @Getter
 public enum CommonError implements BusinessError {
-    ERROR(HttpStatus.INTERNAL_SERVER_ERROR, "%s");
+    NOT_FOUND(HttpStatus.NOT_FOUND, "%s"),
+    INTERNAL_SERVER_ERROR(HttpStatus.INTERNAL_SERVER_ERROR, "%s");
 
     private final HttpStatus httpStatus;
     private final String error;
