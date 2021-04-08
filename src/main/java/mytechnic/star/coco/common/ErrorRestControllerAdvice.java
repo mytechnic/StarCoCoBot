@@ -1,10 +1,10 @@
-package mytechnic.star.coco.service.common;
+package mytechnic.star.coco.common;
 
 import lombok.extern.slf4j.Slf4j;
-import mytechnic.star.coco.data.response.JsonResponse;
-import mytechnic.star.coco.service.common.domain.BusinessError;
-import mytechnic.star.coco.service.common.domain.BusinessErrorException;
-import mytechnic.star.coco.service.common.error.CommonError;
+import mytechnic.star.coco.common.domain.JsonResponse;
+import mytechnic.star.coco.common.domain.BusinessError;
+import mytechnic.star.coco.common.domain.BusinessErrorException;
+import mytechnic.star.coco.common.error.CommonError;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;

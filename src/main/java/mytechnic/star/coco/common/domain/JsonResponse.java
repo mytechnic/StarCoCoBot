@@ -1,10 +1,9 @@
-package mytechnic.star.coco.data.response;
+package mytechnic.star.coco.common.domain;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Getter;
-import mytechnic.star.coco.service.common.domain.BusinessError;
 
 @ApiModel
 @Getter

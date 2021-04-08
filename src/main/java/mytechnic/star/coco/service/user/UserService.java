@@ -1,9 +1,9 @@
 package mytechnic.star.coco.service.user;
 
 import lombok.RequiredArgsConstructor;
-import mytechnic.star.coco.data.UserRepository;
-import mytechnic.star.coco.data.entity.UserEntity;
-import mytechnic.star.coco.service.common.domain.BusinessErrorException;
+import mytechnic.star.coco.data.db.UserRepository;
+import mytechnic.star.coco.data.db.entity.UserEntity;
+import mytechnic.star.coco.common.domain.BusinessErrorException;
 import mytechnic.star.coco.service.user.domain.UserCreateRequest;
 import mytechnic.star.coco.service.user.domain.UserCreateResponse;
 import mytechnic.star.coco.service.user.domain.UserInfoResponse;

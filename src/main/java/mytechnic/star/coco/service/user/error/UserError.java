@@ -2,7 +2,7 @@ package mytechnic.star.coco.service.user.error;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
-import mytechnic.star.coco.service.common.domain.BusinessError;
+import mytechnic.star.coco.common.domain.BusinessError;
 import org.springframework.http.HttpStatus;
 
 @AllArgsConstructor

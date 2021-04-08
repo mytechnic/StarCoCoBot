@@ -1,4 +1,4 @@
-package mytechnic.star.coco.service.common.domain;
+package mytechnic.star.coco.common.domain;
 
 import org.springframework.http.HttpStatus;
 

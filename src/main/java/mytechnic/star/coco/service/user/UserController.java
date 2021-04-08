@@ -3,7 +3,7 @@ package mytechnic.star.coco.service.user;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import lombok.RequiredArgsConstructor;
-import mytechnic.star.coco.data.response.JsonResponse;
+import mytechnic.star.coco.common.domain.JsonResponse;
 import mytechnic.star.coco.service.user.domain.UserCreateRequest;
 import mytechnic.star.coco.service.user.domain.UserCreateResponse;
 import mytechnic.star.coco.service.user.domain.UserInfoResponse;
