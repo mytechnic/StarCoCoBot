@@ -1,6 +1,6 @@
-package mytechnic.star.coco.data.db;
+package mytechnic.star.coco.data.jdbc;
 
-import mytechnic.star.coco.data.db.entity.UserEntity;
+import mytechnic.star.coco.data.jdbc.entity.UserEntity;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;

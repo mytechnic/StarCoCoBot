@@ -1,4 +1,4 @@
-package mytechnic.star.coco.data.db.entity;
+package mytechnic.star.coco.data.jdbc.entity;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;
