@@ -12,8 +12,8 @@ import java.util.Collections;
 @Configuration
 public class DataJdbcConfiguration extends AbstractJdbcConfiguration {
 
-    @Override
     @Bean
+    @Override
     public JdbcCustomConversions jdbcCustomConversions() {
         return new JdbcCustomConversions(Collections.singletonList(new ShortToBooleanConvert()));
     }

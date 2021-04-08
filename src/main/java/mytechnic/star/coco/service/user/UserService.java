@@ -9,6 +9,7 @@ import mytechnic.star.coco.service.user.domain.UserCreateResponse;
 import mytechnic.star.coco.service.user.domain.UserInfoResponse;
 import mytechnic.star.coco.service.user.domain.UserUpdateRequest;
 import mytechnic.star.coco.service.user.error.UserError;
+import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
 import java.util.Date;
@@ -66,7 +67,9 @@ public class UserService {
 
     public List<UserInfoResponse> getUserList() {
 
-        return userRepository.findByIsDeletedOrderByUserNoDesc(false)
+        Sort.TypedSort<UserEntity> user = Sort.sort(UserEntity.class);
+        Sort sort = user.by(UserEntity::getUserNo).descending();
+        return userRepository.findByIsDeleted(false, sort)
                 .stream()
                 .map(this::getUserInfoResponse)
                 .collect(Collectors.toList());
