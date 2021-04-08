@@ -9,6 +9,7 @@ import mytechnic.star.coco.service.user.domain.UserCreateResponse;
 import mytechnic.star.coco.service.user.domain.UserInfoResponse;
 import mytechnic.star.coco.service.user.domain.UserUpdateRequest;
 import mytechnic.star.coco.service.user.error.UserError;
+import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
@@ -69,7 +70,7 @@ public class UserService {
 
         Sort.TypedSort<UserEntity> user = Sort.sort(UserEntity.class);
         Sort sort = user.by(UserEntity::getUserNo).descending();
-        return userRepository.findByIsDeleted(false, sort)
+        return userRepository.findByIsDeleted(false, PageRequest.of(1, 20, sort))
                 .stream()
                 .map(this::getUserInfoResponse)
                 .collect(Collectors.toList());
